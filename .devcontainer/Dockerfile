@@ -1,5 +1,9 @@
 FROM ruby:2.5.1-stretch
 
+RUN mkdir ~/.ssh
+RUN touch ~/.ssh/known_hosts
+RUN ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
 ENV BUNDLER_VERSION 1.16.4
 ENV RAILS_VERSION 5.2.3
 ENV RAILS_ENV development
