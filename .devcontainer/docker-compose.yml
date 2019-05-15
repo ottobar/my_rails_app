@@ -11,6 +11,8 @@ services:
       context: .
     volumes:
       - ..:/app
+      - ~/.gitconfig:/root/.gitconfig
+      - ~/.ssh/id_rsa:/root/.ssh/id_rsa
     ports:
       - '3000:3000'
     command: sleep infinity
