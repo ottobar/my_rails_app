@@ -1,9 +1,31 @@
 {
     "tasks": [
         {
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "label": "Tests",
+            "type": "shell",
+            "command": "bin/rails test",
+            "problemMatcher": []
+        },
+        {
+            "label": "Rails Server",
+            "type": "shell",
+            "command": "bin/rails server -b '0.0.0.0'",
+            "problemMatcher": []
+        },
+        {
             "label": "Setup",
             "type": "shell",
             "command": "bin/setup",
+            "problemMatcher": []
+        },
+        {
+            "label": "Update",
+            "type": "shell",
+            "command": "bin/update",
             "problemMatcher": []
         }
     ]
