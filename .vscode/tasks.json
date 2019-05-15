@@ -1,0 +1,10 @@
+{
+    "tasks": [
+        {
+            "label": "Setup",
+            "type": "shell",
+            "command": "bin/setup",
+            "problemMatcher": []
+        }
+    ]
+}
